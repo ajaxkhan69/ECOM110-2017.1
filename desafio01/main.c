@@ -19,7 +19,7 @@ int main(){
 	uint8_t rand_byte;
 	while(cbPush(&cb,&rand_byte) != CB_FULL){
 		rand_byte = (uint8_t) rand();
-		printf("%x\n",rand_byte);
+		printf("%x - ",rand_byte);
 		usleep(1000*DELAY);
 	}
 	printf("FUDEU!!!\n");
